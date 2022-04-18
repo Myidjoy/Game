@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./zombie.css">
+  <title>Zombie game</title>
+</head>
+<body>
+<header class="header">
+  <div class="wrapper_info">
+  <div>
+    <span>Level:
+      <label id="level"></label>
+    </span>
+  </div>
+  <div>
+    <span>Count:
+      <label id="score"></label>
+    </span>
+  </div>
+  <div>
+    <span>Grenade:
+      <label id="grenade"></label>
+      <span id="load" class="load">
+        <span class="loading"></span>
+      </span>
+    </span>
+</div>
+  </div>
+</header>
+<main>
+  <div id="wrapper" class="wrapper">
+    <div class="board"></div>
+  </div>
+</main>
+<footer class="footer">
+  <button class="start" id="start">Start game</button>
+</footer>
+<script type="module" src="./model.js"></script>
+<script type="module" src="./controller.js"></script>
+<script type="module" src="./view.js"></script>
+<!-- <script type ="module" src="./bundle.js"></script> -->
+</body>
+</html>
